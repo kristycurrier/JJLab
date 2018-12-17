@@ -1,0 +1,55 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    align-content: center;
+    text-align: center;
+}
+
+@keyframes headerFlash{
+    from {color: red;}
+    to{color: white;}
+}
+
+h1 {
+    font-family: 'Bungee', cursive;
+    font-size: 70px;
+    color : red;
+    animation: headerFlash .5s linear;
+    animation-iteration-count: infinite;
+}
+#question{
+    font-size: large;
+}
+
+#button{
+    font-size: large;
+}
+
+.block{
+    display: block;
+    width: 50%;
+    border: none;
+    font-size: large;
+    background-color: red;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#goodOutput{
+    font-size: xx-large;
+    color: green;
+}
+
+#badOutput{
+    font-size: xx-large;
+    color: red;
+}
+
+#dayOutput{
+    font-size: xx-large;
+}
+
+#footnote {
+    font-size: x-small;
+}

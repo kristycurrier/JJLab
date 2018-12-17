@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random Knowledge Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles\main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Danger Zone</h1>
+
+    <iframe src="https://giphy.com/embed/12esT7y9VVi7YY" width="428" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/archer-sterling-danger-zone-12esT7y9VVi7YY"></a></p>
+
+        <p id ="question">Who is your favorite teacher?</p>
+
+    <div>
+        <button onclick="badChoice(); dayGoing();" type="button" class="block" >JASON IS THE BEST!!!</button>
+        <br>
+        <button onclick="badChoice(); dayGoing();" type="button" class="block">JAMES IS THE BEST!!!</button>
+        <br>
+        <button onclick="goodChoice(); dayGoing();"   type="button" class="block">Everyone is special</button>
+    </div>
+    <br> 
+
+    Bad Choices <span id="badOutput"></span>    
+
+    Good Choices <span id = "goodOutput"></span>
+    
+    <br>
+    Your day: <span id = "dayOutput"></span>
+    <p id = "footnote">
+        Make good choices!
+    </p>
+</body>
+<script src="scripts\main.js"></script>
+</html>
