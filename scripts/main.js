@@ -14,7 +14,6 @@ function badChoice() {
 
 var _dayCount = 0;
 var dayElement = document.getElementById("dayOutput");
-
 function dayGoing(){
     _dayCount = _goodCount-_badCount;
     dayElement.innerText =_dayCount;
@@ -22,11 +21,18 @@ function dayGoing(){
 }
 
 function dayGoingColor(_dayCount){
+    programManager(_dayCount);
     if(_dayCount == 0){
         document.getElementById('dayOutput').style.color = "black";  
     } else if (_dayCount < 0) {
         document.getElementById('dayOutput').style.color = "red";
     } else if(_dayCount > 0){
         document.getElementById('dayOutput').style.color = "green";
+    }
+}
+var programElement = document.getElementById("programOutput");
+function programManager(_dayCount){
+    if(_dayCount>10){
+        programElement.innerText="Grace is proud";
     }
 }
