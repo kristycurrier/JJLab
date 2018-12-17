@@ -34,5 +34,9 @@ var programElement = document.getElementById("programOutput");
 function programManager(_dayCount){
     if(_dayCount>10){
         programElement.innerText="Grace is proud";
+    } else if(_dayCount<-10){
+        programElement.innerText="You are making Grace sad";
+    } else{
+        programElement.innerText=" ";
     }
 }
